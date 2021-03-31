@@ -26,7 +26,7 @@ Create empty database for the application (e.g. nmbl ):
 ## Settings
 Create a copy of .env.example file within settings directory and update your local system configuration in it
 
-    cp jwt_auth/jwt_auth/settings/.env.example jwt_auth/flow_algo/settings/.env
+    cp jwt-auth/jwt_auth/settings/.env.example jwt-auth/jwt_auth/settings/.env
 
 
 ## Migrate Database

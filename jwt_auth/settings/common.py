@@ -156,10 +156,16 @@ STATIC_ROOT = PROJECT_DIR.child('staticfiles')
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = [
-    PROJECT_DIR.child("static"),
-]
+# STATICFILES_DIRS = [
+#     PROJECT_DIR.child("static"),
+# ]
 
+# BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# STATIC_ROOT = os.path.normpath(os.path.join(BASE_DIR, 'staticfiles'))
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
 
 CLIENT_ID = os.environ.get("CLIENT_ID")
 CLIENT_SECRET = os.environ.get("CLIENT_SECRET")
